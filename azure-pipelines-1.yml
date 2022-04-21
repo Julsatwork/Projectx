@@ -47,7 +47,8 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Azure Pass - Sponsorship(e3a73afe-721a-4c50-95ff-a449516f73ca)'
+    azureSubscription: 'projectjuls2'
     appType: 'webApp'
-    appName: 'juliaprojectX'
+    appName: 'Projectjuls2'
     package: '$(System.ArtifactsDirectory)/drop/*.zip'
+    deploymentMethod: 'auto'
